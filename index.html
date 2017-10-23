@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <title>GameOfLife</title>
+  </head>
+  <body>
+	<div class="header">
+		<h1>Game of Life</h1>
+	</div>
+	<div class="controllers">
+		<span>Generation: </span><span id="generation"></span>
+		<span>Living cells: </span><span id="liveCells"></span> <br>
+		<button onclick="start(this)" class="myButton" id="start">Play</button>
+		<button onclick="clearUniverse()" class="myButton">Clear</button> <br>
+		<span>¡Change the speed!</span> <br>
+		¡Faster! <input type="range" id="myRange" value="4" onchange="changeMS(value)"> ¡Slower!
+	</div>
+	<div class="canvas-container">
+		<canvas id="myCanvas" width="400" height="400"></canvas>	
+	</div>
+    
+
+  <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>
